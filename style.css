@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#head-title{
+    margin: 60px 0px 40px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* login */
+.sub-cont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#alertbox{
+    visibility: hidden;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 0px;
+    margin-top: 5px;
+    height: 38px;
+}
+
+#errormsg{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+};
+
+.ls-cont{
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 10px;
+}
+
+.login, .signup{
+    /* border: 2px solid red; */
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login{
+    /* display: none; */
+    transition: all 0.5s ease-in-out;
+    margin-top: 50px;
+}
+.signup{
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.login #title, .signup #title{
+    font-size: 34px;
+    margin: 15px 0px;
+}
+
+.login input, .signup input{
+    padding: 7px 5px;
+    margin: 8px 0px;
+    font-size: 18px;
+    outline: none;
+}
+
+.login button, .signup button{
+    padding: 6px 20px;
+    margin: 15px 0px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+}
+
+.login button:hover, .signup button:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.login #signup-link, .signup #login-link, #log-btn, #create-btn{
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#copy{
+    font-size: 18px;
+    padding: 14px 0px;
+}

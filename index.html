@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <!-- <h2 id="head-title">Authentication System</h2> -->
+
+    <div class="sub-cont">
+      <p id="alertbox"> <span id="errormsg"></span></p>
+
+      <div class="ls-cont">
+        <!-- login -->
+        <div class="login">
+          <p id="title">Log in</p>
+          <input
+            type="text"
+            name="uname"
+            id="uname"
+            placeholder="Enter Username"
+          />
+          <input
+            type="password"
+            name="lpass"
+            id="lpass"
+            placeholder="Enter Password"
+          />
+          <button type="submit" onclick="login()">Log in</button>
+
+          <p id="signup-link">
+            Don't have an account?
+            <a href="#" id="create-btn" onclick="createAc()">Create Account</a>
+          </p>
+        </div>
+
+        <!-- signup -->
+        <div class="signup">
+          <p id="title">Create Account</p>
+          <input
+            type="text"
+            name="fname" 
+            id="fname" 
+            placeholder="Enter Name" 
+          />
+
+          <input
+            type="text"
+            name="sname"
+            id="sname"
+            placeholder="Enter Surname"
+          />
+
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Create Username"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email Address"
+          />
+
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Enter Password"
+          />
+
+          <input
+            type="password"
+            name="cpass"
+            id="cpass"
+            placeholder="Confirm Password"
+          />
+          <button type="button" onclick="createAccount()">
+            Create Account
+          </button>
+
+          <p id="login-link">
+            Already have an account?
+            <a href="#" id="log-btn" onclick="loginAccount()">Log In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p id="copy">&copy; Created by Dipesh Kundnani</p>
+  </body>
+</html>
